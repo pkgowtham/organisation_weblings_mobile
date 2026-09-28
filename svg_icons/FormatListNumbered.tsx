@@ -1,0 +1,17 @@
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const SvgFormatListNumbered = (props: SvgProps) => (
+  <Svg
+    width={24}
+    height={24}
+    fill="none"
+    {...props}
+  >
+    <Path
+      fill={props.color || "#000"}
+      d="M2.5 17h2v.5h-1v1h1v.5h-2v1h3v-4h-3zm1-9h1V4h-2v1h1zm-1 3h1.8l-1.8 2.1v.9h3v-1H3.7l1.8-2.1V10h-3zm5-6v2h14V5zm0 14h14v-2h-14zm0-6h14v-2h-14z"
+    />
+  </Svg>
+);
+export default SvgFormatListNumbered;
